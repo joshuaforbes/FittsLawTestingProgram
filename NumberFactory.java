@@ -1,5 +1,3 @@
-package application;
-
 import java.util.Random;
 
 /* This class generates random numbers based on bounds. 

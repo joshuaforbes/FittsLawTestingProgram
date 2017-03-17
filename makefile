@@ -10,7 +10,7 @@ compile:
 
 # This command will run the Hello World Program
 run:
-	java java HCL_HW
+	java Main
 #This command will “clean” out the directory of any output files
 clean:
 	rm *.class

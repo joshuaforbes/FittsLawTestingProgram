@@ -1,5 +1,3 @@
-package application;
-
 /* This class represents a specific trial of the experiment
  */
 

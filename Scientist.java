@@ -1,5 +1,3 @@
-package application;
-
 /* This class represents the 'scientist' conducting the experiment.
  * It wraps the proceedings of data facilitation, storage, collection,
  * and exportation into a neat interface.

@@ -1,5 +1,3 @@
-package application;
-
 /* This class acts as a timing device for the trials.
  * It can handle multiple timings in succession.
  */

@@ -9,7 +9,7 @@ public class Trial {
 	public double targetDist;
 	public long time;
 	
-	//Methods
+	//Constructor
 	Trial(int n, double s, double d, long t){
 		
 		trialNumber = n;

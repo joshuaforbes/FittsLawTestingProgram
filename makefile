@@ -13,4 +13,7 @@ run:
 	java Main
 #This command will “clean” out the directory of any output files
 clean:
-	rm *.class
+	rm -f *.class *.csv
+
+#To make testing easier.	
+test: compile run clean

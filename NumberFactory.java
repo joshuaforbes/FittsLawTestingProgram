@@ -6,8 +6,8 @@ import java.util.Random;
 public class NumberFactory {
 
 	//Our bounds for the factory
-	int upperBound;
-	int lowerBound;
+	private int upperBound;
+	private int lowerBound;
 	
 	//Our random number generator
 	Random gen;
@@ -21,8 +21,8 @@ public class NumberFactory {
 		
 	}
 	
-	//To get a number
-	double getNumber() {
+	//To get a number we generate it in parts and combine them before returning.
+	public double getNumber() {
 
 		int intHalf = gen.nextInt(upperBound - lowerBound + 1) + lowerBound;
 		double doubleHalf = gen.nextDouble();

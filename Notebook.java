@@ -15,6 +15,7 @@ public class Notebook {
 	private Vector<Trial> log;
 	
 	//Constructor
+	// We just make our log
 	Notebook(){
 		
 		log = new Vector<Trial>();
@@ -31,16 +32,27 @@ public class Notebook {
 	//To export to csv
 	public void export(){
 		
+			//We have to be careful here as we can have exceptions thrown.
 			try {
 				
+				//Were going to append the date to the CSV name for record keepint
 				String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
 				
+				//We need to use the print writer as it can print strings and is much
+				//	easier to use.
+				//Here we also make our file.
 				PrintWriter out = new PrintWriter(date + "_FittsLawExperiment_Log.csv");
 				
+				//Get the log size and maek a temporary trial for data extraction
 				int size = log.size();
 				Trial t; 
+				
+				//We need some delimiters for organization
 				String delim = ", ";
 				String nl = "\n";
+				
+				//Now we are going to iterate over the entire log
+				//		extracting and writing the trials
 				for (int iii = 0; iii < size; iii++){
 					
 					t = log.get(iii);
@@ -60,9 +72,10 @@ public class Notebook {
 					
 				}
 				
+				//We need to close our file.
 				out.close();
 				
-				
+			//If an exception is thrown we print and error and die.
 			} catch (IOException e) {
 				
 				System.out.println("Exportation Error | " + e.getMessage());

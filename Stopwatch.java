@@ -4,7 +4,7 @@
 
 public class Stopwatch {
 
-	//Extremes for the interval
+	//Our interval for the interval
 	private long startTime, endTime;
 	
 	Stopwatch(){

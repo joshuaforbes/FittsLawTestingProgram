@@ -8,14 +8,12 @@ import javafx.scene.shape.Circle;
 
 public class CircleButton extends Button{
 
-	//Data members for location, size and color
+	//Data members for location, size and visibility
 	private double X;
 	private double Y;
 	private double radius;
 	private boolean isOn;
 	private Circle c;
-	
-	//Here are the methods
 	
 	//Constructor
 	// Here we create the button and circle at the specified location at the specified size
@@ -61,6 +59,7 @@ public class CircleButton extends Button{
 	}
 	
 	//Here we define some methods to get and set the data members
+	//	as we set the data members we update the representation in real time.
 	public void setX(double x){ 
 		X = x;
 		super.setLayoutX(x);
